@@ -1,12 +1,3 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 10vh;
-  position: fixed;
-  width: 98vw;
-  background-color: white !important;
-}
 .nav-links1 {
   text-decoration: none;
   color: black;
