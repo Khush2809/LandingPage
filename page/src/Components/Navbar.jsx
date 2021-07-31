@@ -5,22 +5,28 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="container">
-      <nav>
+    <div className="navbar">
+      <div>
+        <img src={FinalLogo} alt="logo" style={{ marginRight: "10rem" }}></img>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "30%",
+        }}
+      >
         <div>
-          <img src={FinalLogo} alt="logo" className="logo"></img>
+          <NavLink to="/" className="nav-links1">
+            Home
+          </NavLink>
         </div>
         <div>
-          <ul>
-            <NavLink to="/Home" className="nav-links1">
-              Home
-            </NavLink>
-            <NavLink to="/FAQ" className="nav-links2">
-              FAQ
-            </NavLink>
-          </ul>
+          <NavLink to="/FAQ" className="nav-links1">
+            FAQ
+          </NavLink>
         </div>
-      </nav>
+      </div>
     </div>
   );
 };

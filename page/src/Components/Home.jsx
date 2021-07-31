@@ -6,10 +6,11 @@ import phoneCharge from "./../Images/phoneCharge.gif";
 import transaction from "./../Images/transaction.gif";
 import lock from "./../Images/lock.gif";
 import calci from "./../Images/calci.gif";
+import Scrollbar from "./Scrollbar";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#fbfbfc" }}>
       <div className="row">
         <div className="section1">
           <div className="wrap_content">
@@ -27,7 +28,7 @@ const Home = () => {
             <div className="wrap_input">
               <div>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="phone number"
                   className="inputField"
                 />
@@ -43,27 +44,38 @@ const Home = () => {
         </div>
       </div>
       {/* -----------------------private keys---------------------------- */}
-      <div className="w3-container">
+      <div className="w3-container1">
         <div className="privateKeys">
           <div className="PrivateHr">
             <div class="box">
               <div class="green_line"></div>
             </div>
           </div>
-          <h1 style={{ paddingBottom: "2%", color: " #3e4d53" }}>
+          <h1
+            style={{
+              color: "#3e4d53",
+              fontWeight: "500",
+              marginBottom: "0px",
+              marginTop: "-5%",
+            }}
+          >
             Never Lose Your Private Keys
           </h1>
           <div
             style={{
-              maxWidth: "48rem",
+              maxWidth: "52rem",
               marginLeft: "auto",
               marginRight: "auto",
-              fontSize: "1.3rem",
-              lineHeight: "1.8rem",
-              fontWeight: 400,
             }}
           >
-            <p style={{ paddingBottom: "6%" }}>
+            <p
+              style={{
+                fontSize: "1.2rem",
+                lineHeight: "1.5rem",
+                marginBottom: "5%",
+                fontWeight: 300,
+              }}
+            >
               Losing your keys can mean losing your money forever. Not so with
               Evercoin's non-custodial patent-pending wallet backup and recovery
               service, made even easier with help from our top rated in-app
@@ -93,7 +105,7 @@ const Home = () => {
           <div>
             <div className="ExchangeHr">
               <div class="box">
-                <div class="green_line"></div>
+                <div class="green_line1"></div>
               </div>
               <h2 className="Heading3">Safe from Exchange Hacking</h2>
               <p>
@@ -118,7 +130,7 @@ const Home = () => {
           </div>
           <div className="sendHr">
             <div class="box">
-              <div class="green_line"></div>
+              <div class="green_line1"></div>
             </div>{" "}
             <h2 className="Heading4">Safe Send & Receive</h2>
             <p>
@@ -149,7 +161,7 @@ const Home = () => {
               <div class="box">
                 <div class="green_line"></div>
               </div>{" "}
-              <h2 className="Heading3">Safe from Exchange Hacking</h2>
+              <h2 className="Heading7">Safe from Exchange Hacking</h2>
               <p>
                 Non-custodial means that Evercoin never has your private
                 key--and all transactions get settled on the blockchain. So the
@@ -209,6 +221,9 @@ const Home = () => {
               </div>
             </div> */}
           </div>{" "}
+          <div>
+            <Scrollbar />
+          </div>
         </div>
       </div>
     </div>
